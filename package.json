@@ -1,0 +1,62 @@
+{
+  "name": "cli-mid-verbose",
+  "version": "1.0.0",
+  "description": "Verbose option middleware",
+  "author": "muji <noop@xpm.io>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/freeformsystems/cli-mid-verbose"
+  },
+  "bugs": {
+    "url": "https://github.com/freeformsystems/cli-mid-verbose/issues",
+    "email": "muji <noop@xpm.io>"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/freeformsystems/cli-mid-verbose/blob/master/LICENSE"
+    }
+  ],
+  "keywords": [
+    "cli",
+    "middleware",
+    "option",
+    "verbose"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "chai": "^1.9.1",
+    "istanbul": "^0.3.2",
+    "mocha": "^1.21.4"
+  },
+  "engine": [
+    "node >= 0.10.21"
+  ],
+  "scripts": {
+    "readme": "mdp --force -v",
+    "test": "istanbul cover _mocha -- -u bdd --recursive --bail --reporter list -A test/spec"
+  },
+  "mdp": {
+    "title": "Verbose Middleware",
+    "pedantic": true,
+    "include": "doc/readme",
+    "require": "lib",
+    "links": "links.md",
+    "toc": "Table of Contents",
+    "base": "https://github.com/freeformsystems/cli-mid-verbose",
+    "partial": [
+      {
+        "inc": [
+          "introduction.md",
+          "install.md",
+          "test.md"
+        ]
+      },
+      {
+        "inc": [
+          "license.md"
+        ]
+      }
+    ]
+  }
+}
