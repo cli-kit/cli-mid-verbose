@@ -1,6 +1,6 @@
 {
   "name": "cli-mid-verbose",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Verbose option middleware",
   "author": "muji <noop@xpm.io>",
   "repository": {
