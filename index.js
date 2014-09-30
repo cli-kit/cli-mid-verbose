@@ -37,7 +37,7 @@ module.exports = function(name, description, levels) {
   if(!this.log) return this;
   name = name || '-v, --verbose';
   description = description || 'print more information';
-  var opt = new Flag(name, description);
+  var opt = this.createFlag(name, description);
   this.option(opt);
   var on = (levels && typeof(levels.on) === 'number')
     ? levels.on : this.log.INFO;
